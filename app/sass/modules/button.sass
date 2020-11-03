@@ -1,0 +1,38 @@
+/* Button */
+.btn
+	font-size: rem(22px)
+	line-height: rem(22px)
+	font-weight: 900
+	text-align: center
+	display: inline-block
+	border: 2px solid $primary-color
+	padding: 20px 20px
+	min-width: 270px
+	color: $text-dark
+	text-transform: uppercase
+	letter-spacing: 0.1em
+	transition: 0.3s $timing-func
+	background-color: transparent
+	cursor: pointer
+	&:focus
+		color: $text-dark
+	&:hover
+		border: 2px solid $secondary-color
+		background-color: $secondary-color
+		color: $text-light
+
+@media (pointer: coarse)
+	/* Button */
+	.btn
+		&:hover
+			border: 2px solid $primary-color
+			background-color: transparent
+			color: $text-dark
+
++media($breakpoint-xxs)
+	/* Button */
+	.btn
+		min-width: 200px
+		font-size: rem(18px)
+		line-height: rem(18px)
+		padding: 16px 20px 14px 20px

@@ -1,0 +1,53 @@
+/* Contacts */
+.contacts
+	&__heading-row
+		+row-flex()
+		justify-content: center
+	&__heading-wrap
+		+col(10)
+		margin-bottom: 49px
+	&__row
+		position: relative
+		+row-flex()
+		justify-content: flex-end
+		padding-bottom: 30px
+		&:after
+			position: absolute
+			content: ''
+			+col(11)
+			height: 2px
+			bottom: 0
+			right: 0
+			background-color: $primary-color
+	&__col
+		+col(4)
+		margin-bottom: 40px
+		&:last-child
+			+col(3)
+	&__title
+		margin-bottom: 5px
+
+
+/* Contacts */
++media($breakpoint-lg)
+	.contacts
+		&__heading-wrap
+			+col(12)
+		&__row
+			&:after
+				+col(12)
+		&__col
+			&:last-child
+				+col(4)
+
++media($breakpoint-sm)
+	.contacts
+		&__col
+			+col(6)
+			&:last-child
+				+col(12)
+
++media($breakpoint-sm)
+	.contacts
+		&__col
+			+col(12)

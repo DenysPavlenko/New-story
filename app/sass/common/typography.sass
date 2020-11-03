@@ -1,0 +1,74 @@
+/* Typography styles */
+html, body
+	font-family: 'Catamaran', sans-serif
+	font-size: $base-font
+	text-align: left
+	font-weight: 400
+	color: $text-dark
+h1, .h1
+	font-size: rem(36px)
+	line-height: rem(45px)
+	text-transform: uppercase
+	letter-spacing: 0.1em
+	font-weight: 900
+h2, .h2
+	font-size: rem(24px)
+	line-height: rem(24px)
+	letter-spacing: 0.01em
+	font-weight: 900
+h3, .h3
+	font-size: rem(48px)
+	line-height: rem(55px)
+	letter-spacing: 0.01em
+	font-weight: 900
+h4, .h4
+	font-size: rem(36px)
+	line-height: rem(36px)
+	letter-spacing: 0.01em
+	font-weight: 700
+h5, .h5
+	font-size: rem(24px)
+	line-height: rem(24px)
+	letter-spacing: 0.01em
+	font-weight: 900
+h6, .h6
+	font-size: rem(24px)
+	font-size: rem(24px)
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	font-weight: 700
+p, .p
+	font-size: rem(20px)
+	line-height: rem(35px)
+	font-weight: 400
+	letter-spacing: 0.01em
+
+input, select, textarea, button
+	font-family: inherit
+
+
++media($breakpoint-xxs)
+	/* Typography styles */
+	html, body
+		font-size: 13px
+
++media($breakpoint-320)
+	/* Typography styles */
+	h1, .h1
+		font-size: rem(30px)
+		line-height: rem(40px)
+		letter-spacing: 0.05em
+	h3, .h3
+		font-size: rem(40px)
+		line-height: rem(47px)
+		letter-spacing: 0.01em
+	h4, .h4
+		font-size: rem(30px)
+		line-height: rem(30px)
+	h6, .h6
+		font-size: rem(22px)
+		font-size: rem(22px)
+	p, .p
+		font-size: rem(18px)
+		line-height: rem(30px)
+		letter-spacing: 0

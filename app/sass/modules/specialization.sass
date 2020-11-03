@@ -1,0 +1,96 @@
+/* Specialization */
+.specialization
+	position: relative
+	.row
+		+row-flex()
+		justify-content: center
+	&__heading-wrap
+		+col(10)
+		margin-bottom: 59px
+	&__col
+		+col(5)
+		overflow: hidden
+	&__tabs
+		margin-bottom: 60px
+		padding-right: 70px
+	&__tab
+		position: relative
+		padding: 36px 0
+		margin-bottom: 7px
+		color: $text-dark
+		border-bottom: 2px solid $primary-color
+		cursor: pointer
+		padding-left: 25px
+		z-index: 1
+		span
+			font-size: rem(48px)
+		&:before
+			position: absolute
+			content: ''
+			width: 70px
+			height: 70px
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			z-index: -1
+			border-radius: 50%
+			background-color: $primary-color
+		&:after
+			position: absolute
+			content: ''
+			width: 0
+			height: 9px
+			left: 0
+			bottom: -9px
+			z-index: 1
+			background-color: $secondary-color
+			transition: 0.4s $timing-func
+		&:hover
+			&:after
+				width: 135px
+		&--is-active
+			&:after
+				width: 135px
+	&__images
+		height: 600px
+	&__image
+		position: relative
+		overflow: hidden
+		height: 600px
+		width: 100%
+
++media($breakpoint-xl)
+	/* Specialization styles */
+	.specialization
+		&__tabs
+			padding-right: 0
+
++media($breakpoint-lg)
+	/* Specialization styles */
+	.specialization
+		&__heading-wrap
+			+col(12)
+		&__col
+			+col(6)
+
++media($breakpoint-md)
+	/* Specialization styles */
+	.specialization
+		&__tabs
+			display: none
+		&__col
+			+col(12)
+		&__col:first-child
+			order: 1
+		&__col:last-child
+			margin-bottom: 40px
+		&__images,
+		&__image
+			height: 400px
+
++media($breakpoint-320)
+	/* Specialization styles */
+	.specialization
+		&__images,
+		&__image
+			height: 300px

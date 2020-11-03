@@ -1,0 +1,36 @@
+// Specialization
+section.section.specialization#specialization
+	.container
+		.row
+			.specialization__heading-wrap
+				h2.section__heading Specialization
+
+		.row
+			//- specialization tabs
+			.specialization__col
+				.specialization__tabs
+					h4.specialization__tab(data-name="seo").specialization__tab--is-active
+						span 1
+						|  Seo optimization
+					h4.specialization__tab(data-name="front")
+						span 2
+						|  Frontend coding
+					h4.specialization__tab(data-name="design")
+						span 3
+						|  Design
+					h4.specialization__tab(data-name="photoshop")
+						span 4
+						|  Adobe photoshop
+				a(href="http://example.com" class="btn specialization__button") View more
+
+			//- specialization images
+			.specialization__col.animated-image(data-scroll-animation="revealIn")
+				.specialization__images
+					.specialization__image(data-image="seo")
+						img(src="./images/spec-photo-1.jpg", class="image--stretched" alt="spec-img")
+					.specialization__image(data-image="front")
+						img(src="./images/spec-photo-2.jpg", class="image--stretched" alt="spec-img")
+					.specialization__image(data-image="design")
+						img(src="./images/spec-photo-3.jpg", class="image--stretched" alt="spec-img")
+					.specialization__image(data-image="photoshop")
+						img(src="./images/spec-photo-4.jpg", class="image--stretched" alt="spec-img")

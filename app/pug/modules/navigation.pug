@@ -1,0 +1,27 @@
+// Navigation
+nav.navigation
+	.container
+		.row
+			.navigation__wrap
+				//- navigation logo
+				img(src="./images/logo.png" class="navigation__logo" alt="logo")
+
+				//- navigation menu
+				.navigation__menu-wrap
+					.navigation__menu-bg
+					ul.navigation__menu
+						li.navigation__menu-item
+							a(href="#specialization").navigation__menu-link specialization
+						li.navigation__menu-item
+							a(href="#about").navigation__menu-link about
+						li.navigation__menu-item
+							a(href="#portfolio").navigation__menu-link portfolio
+						li.navigation__menu-item
+							a(href="#contacts").navigation__menu-link contacts
+
+			//- Burger
+			.navigation__burger-wrap
+				.navigation__burger
+					span.navigation__burger-icon
+					span.navigation__burger-icon
+					span.navigation__burger-icon

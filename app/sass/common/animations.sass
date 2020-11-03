@@ -1,0 +1,111 @@
+/* Animations */
+.animated
+	opacity: 0
+
+.fadeIn
+	animation: fadeIn 1s ease-in-out forwards
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+.fadeInUp
+	animation: fadeInUp 1s ease-in-out forwards
+@keyframes fadeInUp
+	from
+		transform: translate3d(0, 75%, 0)
+		opacity: 0
+	to
+		transform: translate3d(0, 0, 0)
+		opacity: 1
+
+.fadeInDown
+	animation: fadeInDown 1s ease-in-out forwards
+@keyframes fadeInDown
+	from
+		transform: translate3d(0, -75%, 0)
+		opacity: 0
+	to
+		transform: translate3d(0, 0, 0)
+		opacity: 1
+
+.fadeInLeft
+	animation: fadeInLeft 1s ease-in-out forwards
+@keyframes fadeInLeft
+	from
+		transform: translate3d(-75%, 0, 0)
+		opacity: 0
+	to
+		transform: translate3d(0, 0, 0)
+		opacity: 1
+
+.fadeInRight
+	animation: fadeInRight 1s ease-in-out forwards
+@keyframes fadeInRight
+	from
+		transform: translate3d(75%, 0, 0)
+		opacity: 0
+	to
+		transform: translate3d(0, 0, 0)
+		opacity: 1
+
+.zoomIn
+	animation: zoomIn 1s ease-in-out forwards
+@keyframes zoomIn
+	from
+		transform: scale(0)
+		opacity: 0
+	to
+		transform: scale(1)
+		opacity: 1
+
+.animated-image
+	>*
+		visibility: hidden
+.revealIn
+	position: relative
+	overflow: hidden
+	z-index: 1
+	>*
+		animation: show-image .1s linear both
+		animation-delay: 1s
+	&:after
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $secondary-color
+		z-index: 20
+		animation: reveal-overlay 2s $timing-func both
+// Image show
+@keyframes show-image
+	to
+		visibility: visible
+// Reveal overlay
+@keyframes reveal-overlay
+	0%
+		left: -2%
+		width: 0%
+	50%
+		left: -2%
+		width: 102%
+	100%
+		left: 102%
+		width: 0
+
+
+.animated-text
+	opacity: 0
+	color: transparent
+	text-shadow: 0 0 30px $text-dark
+
+.blurIn
+	animation: blurIn .6s linear both
+// blur
+@keyframes blurIn
+	to
+		text-shadow: 0 0 0 $text-dark
+		opacity: 1
