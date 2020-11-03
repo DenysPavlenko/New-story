@@ -1,91 +1,91 @@
 /* Base reset styles */
 *
-	box-sizing: border-box
-	outline: none
-	padding: 0
-	margin: 0
-	border: 0
+  box-sizing: border-box
+  outline: none
+  padding: 0
+  margin: 0
+  border: 0
 html, body
-	position: relative
-	overflow-x: hidden
-	background-color: $body-bg
-	overflow: hidden
+  position: relative
+  overflow-x: hidden
+  background-color: $body-bg
+  overflow: hidden
 a, a:focus
-	outline: none
-	text-decoration: none !important
-	color: inherit
+  outline: none
+  text-decoration: none !important
+  color: inherit
 ul
-	padding: 0
-	margin: 0
-	list-style: none
+  padding: 0
+  margin: 0
+  list-style: none
 figure, h1, h2, h3, h4, h5, p
-	margin: 0
-	padding: 0
+  margin: 0
+  padding: 0
 input, textarea
-	outline: none
-	border: none
-	box-shadow: none
+  outline: none
+  border: none
+  box-shadow: none
 input::-ms-clear
-	display: none
-	height: 0
-	width: 0
+  display: none
+  height: 0
+  width: 0
 button:focus
-	outline: none
+  outline: none
 button::-moz-focus-inner
-	border: 0
+  border: 0
 img
-	display: block
-	max-width: 100%
-	border-style: none
+  display: block
+  max-width: 100%
+  border-style: none
 
 /* Containers */
 .container,
 .container-fluid
-	width: 100%
-	margin: 0 auto
+  width: 100%
+  margin: 0 auto
 .container
-	max-width: $container-xl
-	padding: 0 15px
+  max-width: $container-xl
+  padding: 0 15px
 
 /* Rows */
 .row
-	+row-flex()
+  +row-flex()
 
 /* Images */
 .image
-	display: block
-	width: 100%
-	height: auto
+  display: block
+  width: 100%
+  height: auto
 .image--stretched
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
-	width: auto
-	min-width: 100%
-	min-height: 100%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: auto
+  min-width: 100%
+  min-height: 100%
 
 /* Anchors */
 .anchor
-	position: relative
-	display: block
-	top: 0
-	height: 0
-	max-height: 0
+  position: relative
+  display: block
+  top: 0
+  height: 0
+  max-height: 0
 
 +media($breakpoint-xl)
-	/* Base responsive styles */
-	.container
-		max-width: $container-lg
+  /* Base responsive styles */
+  .container
+    max-width: $container-lg
 +media($breakpoint-lg)
-	/* Base responsive styles */
-	.container
-		max-width: $container-md
+  /* Base responsive styles */
+  .container
+    max-width: $container-md
 +media($breakpoint-md)
-	/* Base responsive styles */
-	.container
-		max-width: $container-sm
+  /* Base responsive styles */
+  .container
+    max-width: $container-sm
 +media($breakpoint-sm)
-	/* Base responsive styles */
-	.container
-		max-width: $container-xs
+  /* Base responsive styles */
+  .container
+    max-width: $container-xs

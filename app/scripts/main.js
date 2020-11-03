@@ -13,17 +13,17 @@ import portfolio from './modules/portfolio';
 import scrollAimations from './modules/scroll-animations'
 
 // On document ready
-$(function (){
-	navigation();
-	arrowTop();
-	specialization();
-	aboutSidebar();
-	portfolio();
-	smoothsSroll();
+$(function () {
+  navigation();
+  arrowTop();
+  specialization();
+  aboutSidebar();
+  portfolio();
+  smoothsSroll();
 });
 
 // On window load
 $(window).on('load', function () {
-	preloader();
-	scrollAimations();
+  preloader();
+  scrollAimations();
 });

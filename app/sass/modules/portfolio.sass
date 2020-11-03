@@ -1,53 +1,53 @@
 /* Portfolio */
 .portfolio
-	position: relative
-	padding-bottom: 120px
-	overflow: hidden
-	.row
-		+row-flex()
-		justify-content: center
+  position: relative
+  padding-bottom: 120px
+  overflow: hidden
+  .row
+    +row-flex()
+    justify-content: center
 
 // Menu
 .portfolio-menu
-	+col(4)
-	&__heading-wrap
-		padding-top: 80px
-		margin-bottom: 55px
+  +col(4)
+  &__heading-wrap
+    padding-top: 80px
+    margin-bottom: 55px
 
 // Articles
 .portfolio-articles
-	+col(6)
+  +col(6)
 .portfolio-article
-	padding-top: 79px
-	margin-top: 1px
-	&__title
-		margin-top: -9px
-		margin-bottom: 50px
-	&__images
-		display: flex
-		flex-wrap: wrap
-		margin-bottom: 60px
-	&__image
-		width: 50%
-		height: 100%
+  padding-top: 79px
+  margin-top: 1px
+  &__title
+    margin-top: -9px
+    margin-bottom: 50px
+  &__images
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 60px
+  &__image
+    width: 50%
+    height: 100%
 
 /* Portfolio responsive */
 +media($breakpoint-lg)
-	// Menu
-	.portfolio-menu
-		+col(5)
-	// Articles
-	.portfolio-articles
-		+col(7)
+  // Menu
+  .portfolio-menu
+    +col(5)
+  // Articles
+  .portfolio-articles
+    +col(7)
 
 +media($breakpoint-md)
-	// Menu
-	.portfolio-menu
-		+col(12)
-	.portfolio-menu__list
-		display: none
-	// Articles
-	.portfolio-articles
-		+col(12)
-	.portfolio-article:first-child
-		padding-top: 0
+  // Menu
+  .portfolio-menu
+    +col(12)
+  .portfolio-menu__list
+    display: none
+  // Articles
+  .portfolio-articles
+    +col(12)
+  .portfolio-article:first-child
+    padding-top: 0

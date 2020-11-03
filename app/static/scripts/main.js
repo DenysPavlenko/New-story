@@ -73,7 +73,7 @@
         sidebarOffsetTop = $sidebar.offset().top;
       }
       /* Stick the sidebar if the windowOffsetTop is
-      	bigger than the sidebarOffsetTop */
+        bigger than the sidebarOffsetTop */
 
 
       if (windowOffsetTop >= sidebarOffsetTop) {
@@ -83,12 +83,12 @@
         });
       }
       /* Un-stick the sidebar if the windowOffsetTop is
-      	smaller than the sidebarOffsetTop */
+        smaller than the sidebarOffsetTop */
       else {
           resetSidebar();
         }
       /* Un-stick the sidebar if the sidebarHeight is
-      	bigger than the unstickBottom. Set top position to the sidebar */
+        bigger than the unstickBottom. Set top position to the sidebar */
 
 
       if (sidebarHeight >= unstickBottom) {
@@ -127,7 +127,7 @@
     /* Re-calculate some values on document's height change */
 
     $('.height-change-listener').each(function () {
-      $(this.contentWindow).resize(recalculate);
+      $(this.contentWindow).on('resize', recalculate);
     });
     /* Run the stickySidebar function on page scroll */
 

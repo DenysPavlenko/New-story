@@ -1,37 +1,37 @@
 /* Arrow */
 .arrow-top
-	position: fixed
-	right: 5%
-	bottom: 30px
-	padding: 9px 15px
-	cursor: pointer
-	display: none
-	z-index: 100
-	img
-		display: block
-	&:hover
-		img
-			animation: bounce-arrow .4s $timing-func both
+  position: fixed
+  right: 5%
+  bottom: 30px
+  padding: 9px 15px
+  cursor: pointer
+  display: none
+  z-index: 100
+  img
+    display: block
+  &:hover
+    img
+      animation: bounce-arrow .4s $timing-func both
 
 // Bounce keyframes
 @keyframes bounce-arrow
-	0%
-		transform: translateY(-10%)
-	25%
-		transform: translateY(6%)
-	50%
-		transform: translateY(-4%)
-	75%
-		transform: translateY(2%)
-	100%
-		transform: translateY(0)
+  0%
+    transform: translateY(-10%)
+  25%
+    transform: translateY(6%)
+  50%
+    transform: translateY(-4%)
+  75%
+    transform: translateY(2%)
+  100%
+    transform: translateY(0)
 
 /* Arrow responsive */
 +media($breakpoint-lg)
-	.arrow-top
-		right: 0
-		bottom: 15px
+  .arrow-top
+    right: 0
+    bottom: 15px
 
 +media($breakpoint-md)
-	.arrow-top
-		display: none !important
+  .arrow-top
+    display: none !important

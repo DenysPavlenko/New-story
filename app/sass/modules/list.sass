@@ -1,49 +1,49 @@
 /* List */
 .list
-	position: relative
-	padding-top: 32px
-	display: flex
-	flex-direction: column
-	width: 100%
-	&:before
-		position: absolute
-		content: ''
-		top: 0
-		left: 0
-		width: 300px
-		height: 2px
-		background-color: $primary-color
-	&__item
-		display: flex
-		&:not(:last-child)
-			margin-bottom: 12px
-		&--is-active
-			a
-				color: $text-dark !important
-			a:after
-				right: -15px
-				opacity: 1
-	&__link
-		position: relative
-		color: $text-muted
-		transition: 0.3s
-		&:after
-			position: absolute
-			display: block
-			content: ''
-			top: 50%
-			right: -10px
-			transform: translateY(-50%)
-			margin-top: -2px
-			width: 10px
-			height: 10px
-			transition: 0.3s $timing-func
-			background-color: $primary-color
-			opacity: 0
-		&:focus
-			color: $text-muted
-		&:hover
-			color: $text-dark
-			&:after
-				right: -15px
-				opacity: 1
+  position: relative
+  padding-top: 32px
+  display: flex
+  flex-direction: column
+  width: 100%
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 300px
+    height: 2px
+    background-color: $primary-color
+  &__item
+    display: flex
+    &:not(:last-child)
+      margin-bottom: 12px
+    &--is-active
+      a
+        color: $text-dark !important
+      a:after
+        right: -15px
+        opacity: 1
+  &__link
+    position: relative
+    color: $text-muted
+    transition: 0.3s
+    &:after
+      position: absolute
+      display: block
+      content: ''
+      top: 50%
+      right: -10px
+      transform: translateY(-50%)
+      margin-top: -2px
+      width: 10px
+      height: 10px
+      transition: 0.3s $timing-func
+      background-color: $primary-color
+      opacity: 0
+    &:focus
+      color: $text-muted
+    &:hover
+      color: $text-dark
+      &:after
+        right: -15px
+        opacity: 1

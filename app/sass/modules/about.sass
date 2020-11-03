@@ -1,81 +1,81 @@
 /* About styles */
 .about
-	padding-bottom: 120px
-	.row
-		justify-content: center
+  padding-bottom: 120px
+  .row
+    justify-content: center
 
 // Menu
 .about-menu
-	+col(4)
-	&__heading-wrap
-		padding-top: 80px
-		margin-bottom: 55px
+  +col(4)
+  &__heading-wrap
+    padding-top: 80px
+    margin-bottom: 55px
 
 // Articles
 .about-articles
-	+col(6)
-	&__descritpion
-		display: block
-		margin-top: 1px
-		padding-top: 79px
-	&__descritpion-title
-		margin-top: -9px
-		margin-bottom: 38px
-	&__descritpion-text
-		margin-bottom: 68px
-	&__descritpion-image
-		max-height: 320px
+  +col(6)
+  &__descritpion
+    display: block
+    margin-top: 1px
+    padding-top: 79px
+  &__descritpion-title
+    margin-top: -9px
+    margin-bottom: 38px
+  &__descritpion-text
+    margin-bottom: 68px
+  &__descritpion-image
+    max-height: 320px
 
 // Article
 .about-article
-	position: relative
-	display: flex
-	margin-top: 1px
-	padding-top: 78px
-	&__icon
-		width: 100%
-		max-width: 80px
-		margin-top: 40px
-		img
-			max-width: 60px
-	&__content
-		width: 100%
-	&__title
-		margin-bottom: 30px
+  position: relative
+  display: flex
+  margin-top: 1px
+  padding-top: 78px
+  &__icon
+    width: 100%
+    max-width: 80px
+    margin-top: 40px
+    img
+      max-width: 60px
+  &__content
+    width: 100%
+  &__title
+    margin-bottom: 30px
 
 +media($breakpoint-lg)
-	/* About styles */
-	// Menu
-	.about-menu
-		+col(5)
-	// Articles
-	.about-articles
-		+col(7)
+  /* About styles */
+  // Menu
+  .about-menu
+    +col(5)
+  // Articles
+  .about-articles
+    +col(7)
 
 +media($breakpoint-md)
-	/* About styles */
-	// Menu
-	.about-menu
-		+col(12)
-	.about-menu__list
-		display: none
-	// Articles
-	.about-articles
-		+col(12)
-		&__descritpion
-			padding-top: 0
+  /* About styles */
+  // Menu
+  .about-menu
+    +col(12)
+  .about-menu__list
+    display: none
+  // Articles
+  .about-articles
+    +col(12)
+    &__descritpion
+      padding-top: 0
 
 +media($breakpoint-xs)
-	/* About styles */
-	// Article
-	.about-article
-		display: flex
-		flex-direction: column
-		&__icon
-			width: 100%
-			margin-top: 0
-			margin-bottom: 30px
-		&__descr
-			width: 100%
-		&__title
-			margin-bottom: 30px
+  /* About styles */
+  // Article
+  .about-article
+    display: flex
+    flex-direction: column
+    &__icon
+      width: 100%
+      margin-top: 0
+      margin-bottom: 30px
+    &__descr
+      width: 100%
+    &__title
+      margin-bottom: 30px

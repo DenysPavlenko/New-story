@@ -1,56 +1,56 @@
 /* Footer styles */
 .footer
-	padding-top: 80px
-	&__info
-		+col(12)
-		display: flex
-		justify-content: space-between
-		align-items: center
-		padding-bottom: 46px
-		border-bottom: 10px solid $primary-color
-	&__copy
-		font-size: rem(24px)
-		line-height: rem(24px)
-		font-weight: 500
-		color: $text-dark
-		text-transform: uppercase
-		margin-bottom: 40px
-	&__soc
-		display: flex
-		flex-wrap: wrap
-		margin-bottom: 40px
-	&__soc-item
-		&:not(:last-child)
-			margin-right: 40px
-	&__soc-link
-		position: relative
-		font-size: rem(20px)
-		line-height: rem(20px)
-		font-weight: 900
-		color: $text-dark
-		display: block
-		z-index: 1
-		&:after
-			position: absolute
-			content: ''
-			left: 0
-			bottom: 3px
-			width: 0
-			height: 8px
-			background-color: $primary-color
-			transition: 0.3s $timing-func
-			z-index: -1
-		&:hover
-			&:after
-				width: 100%
+  padding-top: 80px
+  &__info
+    +col(12)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 46px
+    border-bottom: 10px solid $primary-color
+  &__copy
+    font-size: rem(24px)
+    line-height: rem(24px)
+    font-weight: 500
+    color: $text-dark
+    text-transform: uppercase
+    margin-bottom: 40px
+  &__soc
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 40px
+  &__soc-item
+    &:not(:last-child)
+      margin-right: 40px
+  &__soc-link
+    position: relative
+    font-size: rem(20px)
+    line-height: rem(20px)
+    font-weight: 900
+    color: $text-dark
+    display: block
+    z-index: 1
+    &:after
+      position: absolute
+      content: ''
+      left: 0
+      bottom: 3px
+      width: 0
+      height: 8px
+      background-color: $primary-color
+      transition: 0.3s $timing-func
+      z-index: -1
+    &:hover
+      &:after
+        width: 100%
 
 +media($breakpoint-sm)
-	/* Footer styles */
-	.footer
-		&__info
-			display: flex
-			flex-direction: column
-			align-items: flex-start
-			padding-bottom: 26px
-		&__soc-item
-			margin-bottom: 20px
+  /* Footer styles */
+  .footer
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      padding-bottom: 26px
+    &__soc-item
+      margin-bottom: 20px
